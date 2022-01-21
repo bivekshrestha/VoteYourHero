@@ -1,0 +1,394 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Font Awesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #343A4a gray;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: gray;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #343A4a;
+    border-radius: 20px;
+}
+
+.required:after {
+    content: "*";
+    color: darkred;
+}
+
+.country-card-flag {
+    width: 100%;
+    height: 10em;
+}
+
+.hero-card-avatar {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+.hero-image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.home_banner {
+    background: black;
+    border-radius: 0;
+    height: 92vh;
+
+    .bg_image {
+        opacity: 50%;
+        max-height: 92vh;
+        height: 92vh;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    .logo_208 {
+        height: 100px;
+        width: auto;
+    }
+
+    .banner_film_by {
+        font-size: 2.5rem;
+    }
+}
+
+.home_banner .card-img-overlay {
+    text-transform: uppercase;
+
+    h1, h2 {
+        font-weight: 600;
+    }
+}
+
+.section_title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.nav-link.my_nav_links {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    //color: white !important;
+    padding: 20px 0;
+    margin: 0 10px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+.nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: red;
+}
+
+.my_nav_links::before {
+    width: 0;
+    bottom: 10px;
+}
+
+.my_nav_links:hover::before {
+    width: 90%;
+}
+
+.my_active_class {
+    font-weight: 600;
+    color: white !important;
+}
+
+.my_active_class:before {
+    bottom: 10px;
+    width: 90%;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: red;
+}
+
+.hover-shadow-effect:hover {
+    /*  transform: scale(1.04);*/
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+}
+
+.hover-hero-card-effect:hover {
+    background-color: #e8ebef;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+}
+
+.hover-flag-effect:hover {
+    background-color: #e8ebef;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+
+.grow-vote {
+    transition: all .2s ease-in-out;
+}
+
+.grow-vote:hover {
+    transform: scale(1.3);
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-tabs {
+    border-top-right-radius: 0.1875rem;
+    border-top-left-radius: 0.1875rem;
+}
+
+.nav-tabs > .nav-item > .nav-link {
+    color: #888888;
+    margin: 0;
+    margin-right: 5px;
+    background-color: transparent;
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 11px 23px;
+    line-height: 1.5;
+}
+
+.nav-tabs > .nav-item > .nav-link:hover {
+    background-color: transparent;
+}
+
+.nav-tabs > .nav-item > .nav-link.active {
+    background-color: #444;
+    border-radius: 30px;
+    color: #FFFFFF;
+}
+
+.pill-style {
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.hover-table-effect:hover {
+    background-color: #e8ebef;
+}
+
+.first {
+    border: 3px solid gold;
+}
+
+.second {
+    border: 3px solid silver;
+}
+
+.third {
+    border: 3px solid #e4964a;
+}
+
+.profile-head {
+    transform: translateY(5rem)
+}
+
+.cover {
+    background-image: url(https://images.unsplash.com/photo-1530305408560-82d13781b33a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+body {
+    background: #654ea3;
+    background: linear-gradient(to right, #e96443, #904e95);
+}
+
+.region.nav-tabs > .nav-item > .nav-link {
+    color: black;
+    font-weight: bold;
+}
+
+.region.nav-tabs > .nav-item > .nav-link.active {
+    color: #fff !important;
+}
+
+.btn_social {
+    padding: 5px 15px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid;
+    border-radius: 1rem;
+    text-decoration: none !important;
+}
+
+.facebook {
+    background-color: midnightblue;
+    border-color: midnightblue;
+}
+
+.google {
+    background-color: darkred;
+    border-color: darkred;
+}
+
+.facebook:hover {
+    background-color: transparent;
+    color: midnightblue;
+}
+
+.google:hover {
+    background-color: transparent;
+    color: darkred;
+}
+
+.my_btn {
+    border-radius: 1rem !important;
+}
+
+.tb_spacing {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#gotoTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    font-size: 20px; /* Increase font size */
+}
+
+.total_votes {
+    position: fixed;
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 80px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    font-size: 20px; /* Increase font size */
+}
+
+.error {
+    color: red;
+}
+
+.contact_page {
+    i {
+        font-size: 40px;
+        color: #3490dc;
+    }
+}
+
+.nav_logo_100 {
+    height: 100px;
+}
+
+.nav_logo_50 {
+    height: 50px;
+}
+
+#my_navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#navbarSearchContent {
+    display: none !important;
+}
+
+@media (max-width: 1400px) {
+    .nav_logo_100 {
+        height: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .home_banner {
+        h2, .banner_film_by {
+            font-size: 25px;
+        }
+
+        h1 {
+            font-size: 18px;
+        }
+
+        .logo_208 {
+            height: 70px;
+        }
+    }
+
+    .our_teams {
+        h3 {
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+    }
+
+    #navbarSearchContent.show {
+        display: flex !important;
+    }
+}

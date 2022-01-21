@@ -1,0 +1,117 @@
+@extends('site.layouts.master')
+
+@section('title'){{ $meta->meta_title }}@endsection
+
+@section('description'){{ $meta->meta_description }}@endsection
+
+@section('keywords'){{ $meta->meta_keywords }}@endsection
+
+@section('robots')@if($meta->indexing){{ $meta->indexing }}@else{{ 'index, follow' }}@endif
+@endsection
+
+@section('canonical')@if($meta->canonical){{ $meta->canonical }}@else{{ \Illuminate\Support\Facades\URL::current() }}@endif
+@endsection
+
+@section('content')
+    <div class="bg-white">
+        <div class="card bg-dark text-white" style="border-radius: 0">
+            <img src="{{ asset('images/1.jpg') }}" class="card-img" alt="banner" style="width:100%;height:320px">
+            <div class="card-img-overlay" style="opacity: 70%;background: black"></div>
+            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <h1 class="card-title">Our Vision</h1>
+            </div>
+        </div>
+        <hr>
+        <div class="px-5 my-5">
+            <h1>208 Heroes Journey To Everest</h1>
+            <p class="vision-p">
+                Heroes are not born, but are made. Your hero is your symbol, the purity and the strength to persevere
+                and endure in spite of overwhelming obstacles.
+            </p>
+            <p class="vision-p">
+                The journey beings not in the high hills but within yourself, within the mountains of hardship and pain
+                that you behold. Journey to Everest is the journey with purpose and glory; not only the mountains of
+                snow and rocks, that may hold you back but the breathtaking beauty and love for Everest will soar you
+                up. Life itself is the journey to Everest with ups and downs but the goal and purpose will lighten us in
+                our depth of despair.
+            </p>
+
+            <p class="vision-p">
+                Let’s choose the heroes that we feel are connected the most. The life heroes that, we look upto, who
+                inspired us with the actions they made, and impact they have created.
+            </p>
+            <p class="vision-p">
+                Let’s vote for the hero.
+            </p>
+        </div>
+        <hr>
+        <div class="px-5 my-5">
+            <p>208 Helden</p>
+            <p>Die Reise zum Mount Everest</p>
+            <p>Shant Binod Sharma</p>
+            <p>Eine positive Einstellung drückt eine positive Bewertung einer Person, eines Ortes, einer Sache oder eines Ereignisses aus, mit einer bestimmten Intensität , die zu Fortschritten und Veränderungen in allen Aspekten der sozialen, wirtschaftlichen und physischen Umwelt, einschließlich des menschlichen Lebens, führt.
+            Diese Einstellung führt zu allen Aspekten des festen Glaubens, reifen Gefühlen und Entschlossenheit zu bestimmten Handlungen, die letztendlich zu einem bedeutenden Erfolg führen und sie als Held der Gesellschaft verkörpern.
+            In diesem Sinne ist das Hauptthema der Geschichte ein hart arbeitender, fleißiger und emsiger echter Held Nepals und seine positive Einstellung, gepaart mit seiner Entschlossenheit  der nepalesischen Gesellschaft selbstlos zu dienen.
+            Der Weg ist nicht reibungslos wenn es darum geht, großen Erfolg zu erzielen. Trotz aller Widrigkeiten und trotz aller Hindernisse gelingt es manchen Menschen, den Gipfel zu erreichen.</p>
+
+            <p>Diese Geschichten spiegeln die Wahl wider, unten zu bleiben oder den Berg der Größe zu erklimmen. Die wahren Helden, die viel zum Fortschritt und Wohlstand der Gesellschaft in verschiedenen Teilen der Welt beigetragen haben, werden öffentlich ausgewählt und an den Fuß des Mount Everest eingeladen. Sie werden gebeten, die Flaggen der Länder, die sie vertreten, auf dem Gipfel des Mount Everest zu hissen. Dies wird nicht nur positive Stimmung von Einheit und Integrität vermitteln, sondern auch die Größe und Herrlichkeit des Mount Everest darstellen.
+            Das Auswahl- oder Nominierungsverfahren von echten Helden aus verschiedenen Teilen der Welt ist definitiv eine anspruchsvolle Aufgabe. Es ist selten ein reibungsloser Ablauf. In diesem Zusammenhang wird ein Team gebildet, das die Kontakte zu den betroffenen Ländern und staatlichen und nichtstaatlichen Institutionen in Nepal erleichtern soll. Das Team verpflichtet sich, die Regeln und Vorschriften Nepals, zum Erhalt von Genehmigungen einzuhalten.
+            Lassen Sie uns erkunden, wie die Handlung einer Geschichte abläuft. Wenn die Delegierten aus rund 208 Ländern der Welt kommen, werden sie Zeuge vieler Hürden, stehen vor wachsenden Herausforderungen und gehen diesen Herausforderungen direkt nach. Das ist eines der Schwerpunkte dieser Geschichte.
+            Die Reise  mit Delegierten aus Afrika wird verlangsamt durch den Untergang eines Schiffes im Meer ,es kommt zu Auseinandersetzungen, Fragen zur Eleganz der Mission oder des Programms werden aufgeworfen. Doch später, nachdem  mehrere Hindernisse überwunden sind, kann die Reise ohne Unterbrechung fortsetzt werden.</p>
+
+            <p>Alle wahren Helden  aus der ganzen Welt erreichen die Khumbu-Region , um die Mission zu erfüllen. Ihre eigenen Flaggen erscheinen überall. Der Tag wird zu einem Reichtum an Pracht und Ehrfurcht. Es ist ein Tag, an dem Einigkeit und Stolz sprießen und ein Traum wahr wird.</p>
+            Ein Hubschrauber fliegt über das Gebiet, um eine Luftbeobachtung durchzuführen.
+            Plötzlich ertönt eine Notfallsirene. Massenbewegungen von Schnee- und Eislawinen stellen eine potenzielle Gefahr für die umherschwirrenden Menschen dar und können zu Verletzungen führen. Der Klang einer Notfallsirene weht durch die kalte Luft der Region, um die Menschen zu alarmieren.Tapfere und ehrliche Sherpas versorgen die Verletzten und tragen die Opfer in Sicherheit
+            Einen Monat später ist die Route für die Kletterer gebaut, und mit der Zeit und der Unterstützung beginnt das Aufblitzen der Begeisterung. Anschließend werden die Flaggen aller Länder auf dem Gipfel der Welt, dem Mount Everest, gehisst und grüßen ihre Helden und ihre Länder. Ein Bekenntnis mit Glauben und Überzeugung wird wahr. Danach werden alle Helden vom nepalesischen Volk in Kathmandu bejubelt.
+            </p>
+        </div>
+        <hr>
+        <div class="px-5 my-5">
+          <p>208 Героев</p>
+          <p>Путешествие на Эверест</p>
+          <p>Шант Бинод Шарма</p>
+          <p>
+            Позитивное мышление оказывает благоприятное влияние на общество, человека, место, вещь или событие, и с определенной интенсивностью ведет к прогрессу и изменению во всех аспектах социальной, экономической и физической среды, включая человеческую жизнь. Это мышление ведет ко всем аспектам твердой веры, зрелых чувств и решимости в отношении определенных действий. В мире много людей, которые добиваются успеха, реализуя свое позитивное мышление. Эти успешные люди - настоящие герои общества.
+            В этом свете ключевая тема рассказа состоит в том, чтобы показать непальского прилежного и трудолюбивого настоящего героя и его позитивный настрой в сочетании с его решимостью бескорыстно служить непальскому обществу.</p>
+
+            <p>Когда дело доходит до достижения большого успеха, это нелегкий путь. Несмотря на все невзгоды, некоторым удается достичь самой вершины, преодолев все препятствия. Такие истории отражают выбор: оставаться на дне или на вершине величия. Настоящие герои, вносящие большой вклад в общественный прогресс и процветание из разных частей света, будут выбраны публично и будут приглашены к подножию самой высокой горы мира - Эверест. Их попросят поднять флаги всех стран - участниц на вершине горы. Это не только передаст позитивную атмосферу единства и целостности, но также отобразит величие и славу Эвереста.
+            Процедура отбора или номинации настоящих героев из разных уголков мира, безусловно, непростая задача. В связи с этим будет сформирована команда, которая будет содействовать работе с заинтересованными странами, правительственными и неправительственными учреждениями Непала и стран участниц. Эта команда должна будет соблюдать все правила и нормы Непала для получения нужных разрешений для проведения акции.</p>
+            <p>
+            Давайте посмотрим, как будет разворачиватся сюжет истории. Когда прибудут делигаты примерно из 208 стран мира, они станут свидетелями множества неурядиц, сталкнуться с растущими проблемами и будут решать их лицом к лицу - это один из центральных элементов этой истории. Одна из трудностей возникнет из-за того, что в море будет тонуть корабль с делегатами из Африки, вследствии чего начнется паника и возникнут вопросы о правильности данной миссии. Однако позже, преодолев несколько препятствий, они смогут продолжить свое путешествие без каких-либо сбоев.</p>
+            <p>Все настоящие герои со всего мира прибудут в регион Кхумбу, чтобы выполнить миссию. Их собственные флаги появятся повсюду. День превратиться в изобилие великолепных чудес. Настает день, чтобы произвести всплеск единства и гордости и осуществить мечту. Вертолет будет парить над районом, ведя наблюдение с воздуха. Внезапно включится аварийная сирена. Массовые движения снежных и ледяных лавин представят потенциальную опасность для шумных людей, которая может привести к травмам участников акции. Звуки аварийной сирены будет разносится по холодному воздуху по всей территории, предупреждая людей. Смелые и честные шерпы будут спасать раненых, неся их через плечо, и доставят пострадавших в безопасное место. Через месяц трасса для альпинистов будет восстановлена. Начнётся новая вспышка энтузиазма. В следствии чего на вершине мира, на горе Эверест, наконец-то, поднимутся флаги всех стран с громкими приветствием своим героям и странам. Миссия, преисполненная верой и убеждениями, исполнится. После этого все герои будут приветствоваться народом Непала в Катманду.
+          </p>
+
+        </div>
+        <hr>
+        <div class="px-5 my-5">
+          <p>208 Héros</p>
+          <p>Voyage à l'Everest</p>
+          <p>Shant Binod Sharma</p>
+          <p>
+            Une attitude positive exprime une évaluation favorable d'une personne, d'un lieu, d'une chose ou d'un événement à un certain niveau d'intensité, ce qui entraîne des progrès et des changements dans tous les aspects de l'environnement social, économique et physique, y compris la vie humaine. Cette attitude conduit à tous les aspects d'une croyance solide, de sentiments mûrs et de détermination envers certaines actions qui, en fin de compte, se transforment en un succès significatif et font d'eux des héros de la société. Dans cette optique, le thème clé de l'histoire est d'englober le héros réel du Népal, travailleur, diligent et assidu, et son attitude positive associée à sa détermination à servir la société népalaise de manière désintéressée.</p>
+            <p>Lorsqu'il s'agit d'atteindre un grand succès, le voyage ne se fait pas sans heurts. Malgré toutes les adversités, certaines personnes parviennent à atteindre le sommet contre tous les obstacles. Ces histoires reflètent le choix de rester au bas de l'échelle ou de franchir la colline de la grandeur. Les véritables héros, qui ont grandement contribué au progrès et à la prospérité de la société dans différentes parties du monde, seront sélectionnés publiquement et invités au pied du sommet du Mont Everest. Il leur sera demandé de hisser les drapeaux des pays qu'ils représentent sur le sommet du Mont Everest. Cela permettra non seulement de transmettre des vibrations positives d'unité et d'intégrité, mais aussi de dépeindre la grandeur et la gloire du Mont Everest.
+            La procédure de sélection ou de nomination des véritables héros des différentes régions du monde est un véritable défi. Il s'agit rarement d'un parcours sans heurts. À cet égard, une équipe sera formée pour faciliter les contacts avec les pays concernés, les institutions gouvernementales et non gouvernementales du Népal. L'équipe s'engage à respecter les règles et règlements du Népal pour l'obtention des autorisations.</p>
+            <p>Voyons comment se déroule l'intrigue d'une histoire. Lorsque les délégués viennent d'environ 208 pays à travers le monde, ils sont témoins de nombreuses bousculades, font face à des défis croissants et s'attaquent à ces défis de front, c'est l'un des centres de cette histoire. Le voyage est ralenti par le naufrage d'un bateau transportant des délégués d'Afrique, des affrontements commencent, des questions sont soulevées sur l'élégance de la mission ou du programme. Cependant, plus tard, après avoir bravé plusieurs obstacles, ils sont en mesure de poursuivre leur voyage sans aucune interruption.</p>
+            <p>Tous les vrais héros arrivent du monde entier dans la région de Khumbu pour accomplir la mission. Leurs propres drapeaux apparaissent partout. La journée devient une richesse de splendeur. C'est un jour pour faire éclater l'unité et la fierté et réaliser un rêve. Un hélicoptère survole la zone pour faire une observation aérienne. Soudain, une sirène d'urgence retentit. Les mouvements de masse de neige et les avalanches de glace représentent un danger potentiel pour les personnes qui font du bruit et peuvent se blesser. Le son d'une sirène d'urgence retentit dans l'air froid de la région pour alerter les personnes. Des sherpas courageux et honnêtes portent secours aux blessés en les portant en bandoulière et mettent les victimes en sécurité. Un mois plus tard, la route pour les grimpeurs est construite et la guérison avec le temps et le soutien, l'éclair d'enthousiasme commence. Par la suite, les drapeaux de tous les pays sont hissés au sommet du monde, le mont Everest, en saluant leurs héros et leurs pays. Une affirmation avec foi et conviction se réalise. Ensuite, tous les héros sont acclamés par le peuple népalais à Katmandou
+          </p>
+
+        </div>
+        <hr>
+        <div class="px-5 my-5">
+          <p>Heroji 208</p>
+          <p>Putovanje na Mount Everest</p>
+          <p>Shant Binod Sharma</p>
+          <p>Pozitivan stav je od velikog značaja kod procjene osobe, mjesta, stvari ili događaja , intenzitet , kojim je ostvaren napredak i promjena u svim segmentima društva, gospodarskog, fizičke okoline, kao i ljudskog života.
+            Ovakav pozitivan stav dovodi do snažnih uvjerenja, zrelih osjećaja i odlučnosti prema određenim postupcima koji se u konačnici pretvore u značajan uspjeh, i čine osobu herojem društva.</p>
+          <p>U tom svjetlu, ključna tema priče je prigrliti pravog heroja Nepala, marljivog, vrijednog čovjeka koji uvijek zeli pomoći i njegov pozitivan stav, zajedno sa njegovom odlučnošću da nesebično služi nepalskom društvu.U postizanju velikog uspjeha put nije jednostavan. Unatoč svim nedaćama i protiv svih prepreka , neki ljudi uspijevaju dostići.sam vrh Takve priče odražavaju izbor da li ostati na dnu ljestvice ili popeti se na sam vrh. Stvarni heroji, koji su uveliko doprinijeli razvoju i prosperitetu društva u različitim dijelovima svijeta, biti će javno izabrani i pozvani u podnožje Mount Everesta. Od njih će se tražiti da na vrhu Mount Everesta podignu zastave zemalja koje predstavljaju. To ne samo da će prenijeti pozitivne vibracije jedinstva i cjelovitosti, nego će također prikazati veličinu i slavu Mount Everesta.</p>
+          <p>Postupak odabira ili nominiranja stvarnih junaka iz različitih dijelova svijeta je pravi izazov. To je rijetko jednostavno putovanje. U tom smislu, formirati će se tim koji će olakšati kontakte s dotičnim zemljama, vladinim i nevladinim institucijama u Nepalu. Tim ce se zalagati za poštivanje nepalskih pravila i propisa za dobivanje dozvola.
+            Pogledajmo kako se odvija radnja ove priče. Kada izaslanici dolaze iz oko 208 zemalja diljem svijeta, oni svjedoče mnogim sukobima, suočavaju se sa sve većim izazovima i nose se sa tim izazovima .To je jedno od ključnih događaja ove priče.</p>
+          <p>Putovanje je usporeno kroz potonuće broda koji prevozi delegate iz Afrike, počinju sukobi , postavljaju se pitanja o eleganciji misije ili programa. Međutim, kasnije, nakon što su se suočili s nekoliko prepreka, oni su u stanju nastaviti svoje putovanje bez prekida.
+            Svi pravi heroji dolaze iz cijelog svijeta u regiju Khumbu kako bi ostvarili misiju. Njihove zastave vijore posvuda. Dan postaje bogatstvo raskoši. To je dan jedinstva i ponosa i dan ostvarivanja sna.
+            Iznad tog područja leti helikopter za promatranja iz zraka. Iznenada se oglasuje zvuk sirene. Masovna kretanja snježnih i ledenih lavina predstavljaju potencijalnu opasnost za ljude koji stvaraju buku i koji mogu biti ozlijeđeni. U hladnom zraku tog područja čuje se zvuk sirene kako bi upozorio ljude. Hrabre i poštene Šerpe spašavaju ranjenike noseći ih prebačene preko ramena i odvode žrtve na sigurno.
+            Mjesec dana kasnije , put za penjače je izgrađen i sa podrškom i vremenom nastaje stanje entuzijazma.
+            Nakon toga, na vrhu svijeta, Mount Everest, podižu se zastave svih zemalja pozdravljajući svoje heroje i svoje zemlje. Ostvaruje se vizija vjere i uvjerenja. Nepalci u gradu Katmandu bodre sve junake.</p>
+        </div>
+        <hr>
+    </div>
+@endsection
